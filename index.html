@@ -12,15 +12,17 @@
 <body>
     <div class="page">
         <nav class="navbar">
-            <ul>
+            <ul class="ul-nav">
                 <li class="nav-title">Maria Valen❤</li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact-me">Contact me</a></li>
-                <li><a class="active" href="#about-me">About me</a></li>
+                <li><a class="nav-a" href="#contact-me">Contact me</a></li>
+                <li><a class="nav-a" href="#skills">Skills</a></li>
+                <li><a class="nav-a" href="#experience">Experience</a></li>
+                <li><a class="nav-a" href="#about-me">About me</a></li>
+                <li><a class="active nav-a" href="#home">Home</a></li>
             </ul>
         </nav>
 
-        <div class="slideshow-container">
+        <div class="slideshow-container" id="home">
 
             <div class="mySlides fade">
               <img src="imagenes/hero-london-one.jpg" style="width:100%; height:100vh">
@@ -37,9 +39,92 @@
             
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
             </div>
         </div>
+
+        <!-- About me Section -->
+        <section id="about-me">
+            <div class="ab-me-title">
+                <h1 class="sec-title">ABOUT ME</h1>
+            </div>
+
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="exp-title">
+                <h1 class="sec-title">EXPERIENCE</h1>
+            </div>
+
+            <div class="cards">
+
+                <div class="card-project">
+                    <img src="imagenes/python.jpg" alt="Image of Python Logo" style="width:100%; border-radius: 10px;">
+                    <div class="card-infor">
+                      <h3 class="card-item">Proyecto Algoritmos</h3>
+                      <ul class="card-item">
+                          <li><p>Python</p></li>
+                          <li><p>Github</p></li>
+                      </ul>
+                      <h5 class="card-item">Fecha: 19 Septiembre 2019</h5>
+                    </div>
+                </div>
+    
+                <div class="card-project">
+                    <img src="imagenes/mysql.jpg" alt="Image of SQL Logo" style="width:100%; border-radius: 10px;">
+                    <div class="card-infor">
+                      <h3 class="card-item">Proyecto Base de Datos</h3>
+                      <ul class="card-item">
+                          <li><p>MySql</p></li>
+                          <li><p>React</p></li>
+                      </ul>
+                      <h5 class="card-item">Fecha: 2 Junio 2020</h5>
+                    </div>
+                </div>
+    
+                <div class="card-project">
+                    <img src="imagenes/sap.jpg" alt="Image of Python Logo" style="width:100%; border-radius: 10px;">
+                    <div class="card-infor">
+                      <h3 class="card-item">Proyecto SAP</h3>
+                      <ul class="card-item">
+                          <li><p>Abap</p></li>
+                          <li><p>SAP</p></li>
+                      </ul>
+                      <h5 class="card-item">Fecha: 25 Agosto 2019</h5>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="skills-title">
+                <h1 class="sec-title">SKILLS</h1>
+            </div>
+
+        </section>
+
+        <!-- Contact me Section -->
+        <section id="contact-me">
+            <div class="contact-title">
+                <h1 class="sec-title">CONTACT ME</h1>
+            </div>
+
+            <div class="contact-flex">
+                <div>
+                    <form>
+                        
+
+                    </form>
+                </div>
+
+
+            </div>
+
+        </section>
 
 
 
