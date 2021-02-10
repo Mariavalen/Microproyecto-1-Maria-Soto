@@ -50,3 +50,28 @@ function onSend() {
         console.log("Mensaje: ", message);
     }
 }
+
+
+// ----- Skills Animations ----- //
+var skills = [
+    {
+        name: "Python",
+        width: "90%"
+    },
+    {
+        name: "Html",
+        width: "70%"
+    },
+    {
+        name: "CSS",
+        width: "80%"
+    },
+    {
+        name: "Javascript",
+        width: "50%"
+    }
+]
+
+window.addEventListener("load", function (e){
+    document.getElementById
+})
