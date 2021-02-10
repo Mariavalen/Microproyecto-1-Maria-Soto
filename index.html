@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Microproyecto 1 Maria Valen</title>
 </head>
+
 <body>
     <div class="page">
         <nav class="navbar">
@@ -25,115 +27,177 @@
         <div class="slideshow-container" id="home">
 
             <div class="mySlides fade">
-              <img src="imagenes/hero-london-one.jpg" style="width:100%; height:100vh">
-              <!-- <div class="text">Caption Text</div> -->
+                <img src="imagenes/hero-london-one.jpg" style="width:100%; height:100vh">
+                <!-- <div class="text">Caption Text</div> -->
             </div>
-            
+
             <div class="mySlides fade">
-              <img src="imagenes/hero-london-dos.jpg" style="width:100%; height:100vh">
+                <img src="imagenes/hero-london-dos.jpg" style="width:100%; height:100vh">
             </div>
-            
+
             <div class="mySlides fade">
-              <img src="imagenes/hero-london-tres.jpg" style="width:100%; height:100vh">
+                <img src="imagenes/hero-london-tres.jpg" style="width:100%; height:100vh">
             </div>
-            
+
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
+        </div>
+    </div>
+
+    <!-- About me Section -->
+    <section id="about-me">
+        <div class="ab-me-title">
+            <h1 class="sec-title">ABOUT ME</h1>
         </div>
 
-        <!-- About me Section -->
-        <section id="about-me">
-            <div class="ab-me-title">
-                <h1 class="sec-title">ABOUT ME</h1>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="exp-title">
+            <h1 class="sec-title">EXPERIENCE</h1>
+        </div>
+
+        <div class="cards">
+
+            <div class="card-project">
+                <img src="imagenes/python.jpg" alt="Image of Python Logo" style="width:100%; border-radius: 10px;">
+                <div class="card-infor">
+                    <h3 class="card-item">Proyecto Algoritmos</h3>
+                    <ul class="card-item">
+                        <li>
+                            <p>Python</p>
+                        </li>
+                        <li>
+                            <p>Github</p>
+                        </li>
+                    </ul>
+                    <h5 class="card-item">Fecha: 19 Septiembre 2019</h5>
+                </div>
             </div>
 
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience">
-            <div class="exp-title">
-                <h1 class="sec-title">EXPERIENCE</h1>
+            <div class="card-project">
+                <img src="imagenes/mysql.jpg" alt="Image of SQL Logo" style="width:100%; border-radius: 10px;">
+                <div class="card-infor">
+                    <h3 class="card-item">Proyecto Base de Datos</h3>
+                    <ul class="card-item">
+                        <li>
+                            <p>MySql</p>
+                        </li>
+                        <li>
+                            <p>React</p>
+                        </li>
+                    </ul>
+                    <h5 class="card-item">Fecha: 2 Junio 2020</h5>
+                </div>
             </div>
 
-            <div class="cards">
+            <div class="card-project">
+                <img src="imagenes/sap.jpg" alt="Image of Python Logo" style="width:100%; border-radius: 10px;">
+                <div class="card-infor">
+                    <h3 class="card-item">Proyecto SAP</h3>
+                    <ul class="card-item">
+                        <li>
+                            <p>Abap</p>
+                        </li>
+                        <li>
+                            <p>SAP</p>
+                        </li>
+                    </ul>
+                    <h5 class="card-item">Fecha: 25 Agosto 2019</h5>
+                </div>
+            </div>
 
-                <div class="card-project">
-                    <img src="imagenes/python.jpg" alt="Image of Python Logo" style="width:100%; border-radius: 10px;">
-                    <div class="card-infor">
-                      <h3 class="card-item">Proyecto Algoritmos</h3>
-                      <ul class="card-item">
-                          <li><p>Python</p></li>
-                          <li><p>Github</p></li>
-                      </ul>
-                      <h5 class="card-item">Fecha: 19 Septiembre 2019</h5>
+        </div>
+
+
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="skills-title">
+            <h1 class="sec-title">SKILLS</h1>
+        </div>
+
+    </section>
+
+    <!-- Contact me Section -->
+    <section id="contact-me">
+        <div class="contact-title">
+            <h1 class="sec-title">CONTACT ME</h1>
+        </div>
+
+        <div class="contact-flex">
+            <div class="contact-box">
+                <form onsubmit="">
+
+                    <div class="line-form">
+                        <label class="label-contact" for="name"><h3>Nombre:</h3></label>
+                        <input type="text" id="name" placeholder="Nicolas Leal" class="input" required>
+                    </div>
+
+                    <div class="line-form">
+                        <label class="label-contact" for="email"><h3>Email:</h3></label>
+                        <input type="text" id="email" placeholder="nicolas.leal@gmail.com" class="input" required>
+                    </div>
+
+                    <div class="line-form">
+                        <label class="label-contact" for="number"><h3>Teléfono Celular:</h3></label>
+                        <input type="text" id="phone" placeholder="0241236545" class="input" required>
+                    </div>
+
+                    <div class="line-form">
+                        <label class="label-contact" for="message"><h3>Mensaje:</h3></label>
+                        <input type="text" id="message" placeholder="Mensaje" class="input" required>
+                    </div>
+
+                    <button type="button" onclick="onSend()" id="btn-form">Enviar Formulario</button>
+                </form>
+            </div>
+
+            <div class="contact-box">
+                <div class="social-box">
+
+                    <div class="social-img">
+                        <a href="https://www.facebook.com/mariavalentina.sotoalvarez/">
+                            <img src="/imagenes/facebook.svg" />
+                        </a>
+                    </div>
+
+                    <div class="social-img">
+                        <a href="https://www.instagram.com/maryvalen25/">
+                            <img src="/imagenes/instagram.svg" />
+                        </a>
+                    </div>
+
+                    <div class="social-img">
+                        <a href="https://api.whatsapp.com/send?phone=584142871576">
+                            <img src="/imagenes/whatsapp.svg" />
+                        </a>
+                    </div>
+
+                    <div class="social-img">
+                        <a href="mailto:mvsanasa@gmail.com">
+                            <img src="/imagenes/gmail.svg" />
+                        </a>
                     </div>
                 </div>
-    
-                <div class="card-project">
-                    <img src="imagenes/mysql.jpg" alt="Image of SQL Logo" style="width:100%; border-radius: 10px;">
-                    <div class="card-infor">
-                      <h3 class="card-item">Proyecto Base de Datos</h3>
-                      <ul class="card-item">
-                          <li><p>MySql</p></li>
-                          <li><p>React</p></li>
-                      </ul>
-                      <h5 class="card-item">Fecha: 2 Junio 2020</h5>
-                    </div>
-                </div>
-    
-                <div class="card-project">
-                    <img src="imagenes/sap.jpg" alt="Image of Python Logo" style="width:100%; border-radius: 10px;">
-                    <div class="card-infor">
-                      <h3 class="card-item">Proyecto SAP</h3>
-                      <ul class="card-item">
-                          <li><p>Abap</p></li>
-                          <li><p>SAP</p></li>
-                      </ul>
-                      <h5 class="card-item">Fecha: 25 Agosto 2019</h5>
-                    </div>
-                </div>
-
             </div>
 
 
-        </section>
+        </div>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <div class="skills-title">
-                <h1 class="sec-title">SKILLS</h1>
-            </div>
-
-        </section>
-
-        <!-- Contact me Section -->
-        <section id="contact-me">
-            <div class="contact-title">
-                <h1 class="sec-title">CONTACT ME</h1>
-            </div>
-
-            <div class="contact-flex">
-                <div>
-                    <form>
-                        
-
-                    </form>
-                </div>
-
-
-            </div>
-
-        </section>
+    </section>
 
 
 
 
 
-        
-        
-        
-        <script src="main.js"></script>
+
+
+
+    <script src="main.js"></script>
     </div>
 </body>
+
 </html>
