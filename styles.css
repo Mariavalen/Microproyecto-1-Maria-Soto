@@ -7,12 +7,12 @@
 /*------ CSS Variables -----*/
 :root {
     --gradientPrimary: linear-gradient(80.79deg, #ff2599 0%, #ef233c 100%);
-    --primary: rgb(239, 35, 60);
+    --primary: linear-gradient(90deg, #ad0050 0%, #e83b51 100%);
+
     --dark: rgb(43, 45, 66);
     --light: rgb(237, 242, 244);
-    /* --accent: rgb(217, 4, 41);
-    --accent-2: rgb(141, 153, 174);
-    --success: rgb(76, 224, 109); */
+    
+    --btn-color: linear-gradient(90deg, #ad0050 0%, #e83b51 100%);
 }
 
 /* color: #c94b4b, #3f2b96 */
@@ -101,7 +101,14 @@ img {
 
 /* ------ About me Styles ------ */
 #about-me {
-    height: 200vh;
+    height: auto;
+    background: var(--primary);
+    color: var(--light);
+    font-weight: bold;
+}
+
+.ab-title {
+    color: var(--light)
 }
 
 .aboutme-sec {
@@ -136,6 +143,10 @@ section {
     padding: 65px 2em;
 }
 
+#experience {
+    background: #f1d9f0;
+}
+
 .sec-title {
     color: rgb(43, 45, 66);
 }
@@ -149,7 +160,7 @@ section {
 
 .card-project {
     width: 28vw;
-    background: rgb(43, 45, 66);
+    background: var(--primary);
     color: white;
     padding: 1em;
     border-radius: 10px;
@@ -159,6 +170,68 @@ section {
     margin-bottom: 5px;
     margin-top: 5px;
 }
+
+/* ------ Skills Styles ------ */
+
+.container-barras{
+    padding: 3vw;
+}
+
+.row-bar{
+    padding: 1em;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.bar-skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#python {
+    width: 85%;
+    background-color: #2d0bc5;
+}
+
+#html {
+    width: 80%;
+    background-color: #e27831;
+}
+
+#css {
+    width: 65%;
+    background-color: #19e958;
+}
+
+#js {
+    width: 60%;
+    background-color: #a522e2;
+}
+
+
+/* .bar{    
+    border: 3px solid whitesmoke;
+    border-radius: 30px;
+    height: 40px;
+}
+
+#bar-1{
+    background-color: rgb(20, 220, 200);
+
+}
+
+#bar-2{
+    background-color: rgb(207, 220, 20);
+}
+
+#bar-3 {
+    background-color: rgb(220, 20, 20);
+} */
 
 /* ------ Contact me Styles ------ */
 
@@ -210,4 +283,13 @@ form {
 .social-img {
     width: 25%;
     margin: 1vw;
+}
+
+#contact-me {
+    background: var(--dark);
+    color: var(--light);
+}
+
+.c-title {
+    color: var(--light);
 }

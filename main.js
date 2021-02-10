@@ -53,25 +53,36 @@ function onSend() {
 
 
 // ----- Skills Animations ----- //
-var skills = [
-    {
-        name: "Python",
-        width: "90%"
-    },
-    {
-        name: "Html",
-        width: "70%"
-    },
-    {
-        name: "CSS",
-        width: "80%"
-    },
-    {
-        name: "Javascript",
-        width: "50%"
-    }
+let data = [
+    { name: "Python", level: "90%" },
+    { name: "HTML", level: "95%" },
+    { name: "CSS", level: "80%" },
+    { name: "Javascript", level: "50%" }
 ]
 
-window.addEventListener("load", function (e){
-    document.getElementById
-})
+window.addEventListener("load", function (e) {
+    let python = document.getElementById("python");
+    // console.log(python.style.width)
+    python.style.width = data[0].level;
+
+    let html = document.getElementById("html");
+    html.style.width = data[1].level;
+
+    let css = document.getElementById("css");
+    css.style.width = data[2].level;
+
+    let js = document.getElementById("js");
+    js.style.width = data[3].level;
+});
+
+// function onHover() {
+//     let bar1 = document.getElementById("bar1");
+    
+//     bar1.style.width = json[0].level;
+//     console.log(bar1.style.width)
+//     bar1.style.height = json[0].height;
+//     bar1.style.borderRadius = json[0].radius;
+//     bar1.style.backgroundColor = json[0].color;
+// }
+
+
